@@ -1,0 +1,15 @@
+class instagramObjects 
+{
+	public static void main(String[] args) 
+	{
+		instagram ob1=new instagram("Kavi12","kavi@123455","Aug123","1255712637");
+		System.out.println("Constructor call :"+ob1.u_name);
+		//CTE
+		//System.out.println("Constructior call"+ob1.u_email);
+		//System.out.println("Constructior call"+ob1.u_password);
+		//System.out.println("Constructior call"+ob1.u_Contact);
+		System.out.println("Before getter call :"+ob1.getEmail());
+		ob1.setEmail("Fedex@123456");
+		System.out.println("After getter call :"+ob1.getEmail());
+	}
+}

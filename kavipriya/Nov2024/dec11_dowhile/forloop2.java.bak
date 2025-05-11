@@ -1,0 +1,153 @@
+/**   Printing 1-n
+
+enter n:5
+ooutput : 1,2,3...5
+import java.util.*;
+class forloop2 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Printing 1-n\n Enter your the number");
+		//print the number from 1-n where n decided by user
+ int n=sc.nextInt();
+		for(int i=0;i<n;i++){
+
+			System.out.println(" "+i);
+
+		}
+	}
+}
+
+
+
+**/ 
+
+
+
+/** PRINT SUM of N-1 where n is decided  by user
+import java.util.*;
+class forloop2 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Printing N-1\n Enter your the number");
+		//print the number from 1-n where n decided by user
+ int n=sc.nextInt();
+		for(int i=n;i>0;i--){
+
+			System.out.print(" "+i);
+
+		}
+	}
+}
+
+**/
+
+
+
+/** PRINT SUM of 1-N where n is decided  by user
+import java.util.*;
+class forloop2 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Printing 1-n\n Enter your the number");
+		//print the number from 1-n where n decided by user
+ int n=sc.nextInt();
+ int sum=0;
+		for(int i=0;i<n;i++){
+			sum=n+sum;
+			System.out.println(" Sum of "+i+"loop"+sum);
+
+		}
+	}
+}
+
+
+
+
+/** PRINT FACTORIAL OF GIVEN NUMBER
+
+The factorial of a number is a mathematical operation that multiplies all positive integers up to that number. It is denoted by n! and is defined as:
+
+For n = 0, 0! = 1
+
+For n > 0, n! = n * (n - 1) *  ... * 1
+
+
+import java.util.*;
+class forloop2 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter your the number for factorial");
+		//print the number from 1-n where n decided by user
+		int num=sc.nextInt();
+	int fact=1;
+		if(num==0){
+			System.out.println("factorial of zero is"+fact);
+
+		}
+
+		else if (num>0)
+		{
+			int originalNum=num;	
+			while(num!=0){
+				fact=num*fact;
+				num--;
+
+			}
+
+			System.out.println("factorial of "+originalNum +"is"+fact);
+		}
+			
+
+		}
+	}
+
+
+**/
+
+
+
+
+//check whther given number is prime or not//contine tmmr 
+
+import java.util.*;
+class forloop2{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter your the number for Prime");
+		int num_input=sc.nextInt();
+		int count=0;
+
+		for (int i=2;i<num_input;i++){
+			
+			while(num_input % i==0){
+				count++;
+
+			}
+
+			
+		}
+
+		if(count>1){
+				System.out.println(num_input+"is not prime number");
+			}else{
+				System.out.println(num_input+"is a prime number");
+			}
+
+		}
+			
+
+		}
+	
+
+
+
+

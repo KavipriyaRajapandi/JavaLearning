@@ -1,0 +1,49 @@
+class Ram 
+{
+	public static void  main(String[] args) 
+	{
+		System.out.println("ram main method");
+		
+	}
+
+
+}
+
+
+class shyam
+{
+
+static{
+System.out.println(" shyam static 1 block");
+//System.out.println("access variable"+a);
+	
+	}
+ static String a="shyamStaticvariable";
+	public static void main(String[] args) 
+	{
+		System.out.println("shyam MAIN method");
+		//System.out.println(" "+m1());//u cannot call void method inside sop bcause it will not return anything 
+		String shiny[]={"aaa","bbb","ccc"};
+		System.out.println(" "+Ram.main(shiny));
+		Ram.main(shiny);
+	}
+
+	static{
+	System.out.println(" shyam static 2 block");
+	System.out.println("access variable: >>>> "+a);
+
+	}
+
+	public static string m1(){
+		System.out.println(" shyam m1 method");
+		return "XXX";
+	}
+
+public static void m2(){
+		System.out.println(" shyam m1 method");
+		return "XXX";
+	}
+
+
+
+}

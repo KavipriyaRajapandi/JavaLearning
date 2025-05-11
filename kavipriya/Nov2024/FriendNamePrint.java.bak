@@ -1,0 +1,17 @@
+class FriendNamePrint
+{
+	public static void main(String[] args) 
+	{
+		System.out.print("f2"+"BBB");
+		System.out.print("f3"+"CCC");
+		System.out.print("f1"+"AAA");
+		System.out.print("f4"+"DDD");
+	}
+}
+
+
+
+<!-- 
+C:\Users\Kavipriya\Desktop\QspiderAssignments\Nov2024>javac FriendNamePrint.java
+C:\Users\Kavipriya\Desktop\QspiderAssignments\Nov2024>java FriendNamePrint.java
+f2BBBf3CCCf1AAAf4DDD -->

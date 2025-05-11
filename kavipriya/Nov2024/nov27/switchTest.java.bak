@@ -1,0 +1,29 @@
+import java.util.*;
+class switchTest 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("select the movie:");
+		int movienumber=sc.nextInt();
+
+//switch(movie block)
+
+switch(movienumber){ //movie switch block start
+	
+	case '1':{
+		System.out.println("user selected: pushpa");
+
+         System.out.println("select the Actors:");
+		int actorNumber=sc.nextInt();
+
+
+		Switch()
+		
+	}
+
+
+}//movie switch block end
+
+	}
+}

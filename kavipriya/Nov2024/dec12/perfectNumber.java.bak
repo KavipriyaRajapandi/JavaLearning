@@ -1,0 +1,36 @@
+/**
+wajp to find given number is perfect or no
+
+
+6 >> factors of 6 is 1,2,3>>sum of factors is 6
+ n >>28 >> get factors of 28 and sum it >> if u get same original
+
+**/
+
+import java.util.*;
+class perfectNumber{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter your the number to find factor");
+		int num_input=sc.nextInt();
+		int temp=num_input;
+		int sum=0;
+		System.out.println(" Factors of "+num_input+" :");
+
+		for (int i=1;i<=num_input/2;i++){
+			
+			if(num_input % i==0){
+				
+				System.out.print(" "+i);
+				sum=sum+i;
+				}
+						
+		}
+
+		if(temp==sum){System.out.println(" "+temp+" PERFECT NUMBER");}
+else {System.out.println(" "+temp+": NOT A PERFECT NUMBER");}
+
+		}
+
+}

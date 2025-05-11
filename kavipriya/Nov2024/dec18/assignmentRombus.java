@@ -1,0 +1,60 @@
+import java.util.*;
+class assignmentRombus 
+{
+		static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		System.out.println("Enter Matrix Size:");
+		int n=sc.nextInt();
+		for(int i=0;i<n;i++){	// i loop
+			
+                 //System.out.println(i+"\n\n");
+
+			for(int j=0;j<n;j++){//box1 //fixed  
+				
+					if(i==j+n/2 || i+j==n-1+n/2 ||i==j-n/2 || i+j==n-1-n/2 ){
+
+
+
+					//System.out.print("print i"+i+"j"+j);
+					System.out.print("* ");
+					}
+					else{
+						System.out.print("  ");
+					}
+                    
+					
+			} //box1
+
+			System.out.println("  ");
+
+
+			
+		}//i loop
+
+
+
+
+
+			for(int i=0;i<n;i++){	// i loop
+			
+			for(int j=0;j<n;j++){//box2 //fixed  
+				
+					if(i==j+n/2 || i+j==n-1+n/2 ||i==j-n/2 || i+j==n-1-n/2 ){
+
+
+
+					//System.out.print("print i"+i+"j"+j);
+					System.out.print("* ");
+					}
+					else{
+						System.out.print("  ");
+					}
+			}//box 2
+
+			System.out.println("    ");
+			//System.out.println(i+"  ");
+			
+		}//i loop
+	}
+}

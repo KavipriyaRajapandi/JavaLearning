@@ -1,0 +1,37 @@
+import java.util.*;
+
+class  Example11While
+{
+static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+//System.out.println("Please enter start number ");
+//		int startnum=sc.nextInt();
+//
+//		System.out.println("Please enter end number ");
+//			int endnum=sc.nextInt();
+//		
+////any number dvide by 2 and reminder is zero then even else ODD 
+////
+//while (startnum<= endnum)
+//{
+//System.out.println("\n"+startnum+" ");
+//
+//startnum++;
+//}
+		
+
+System.out.println("Please enter end number ");
+			int endnum2=sc.nextInt();
+System.out.println("Please enter start number ");
+		int startnum2=sc.nextInt();
+while (endnum2>=startnum2)
+{
+System.out.println("\n"+endnum2+" ");
+
+endnum2--;
+}
+	
+
+	}
+}

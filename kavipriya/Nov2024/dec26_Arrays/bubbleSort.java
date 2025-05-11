@@ -1,0 +1,64 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+class bubbleSort 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		//int a[]=storedataInArray();
+		int a[]={23, 45, 1, 12, 5, 99};
+	
+		System.out.println(" array  a =>>"+Arrays.toString(a));
+		
+
+		insertionSort(a);
+
+	}
+
+	  public static int[] storedataInArray() 
+	{
+		System.out.println("Enter the array Size:");
+		int size=sc.nextInt();
+
+		int a[]=new int[size];
+		
+		
+		for(int i=0;i<a.length;i++){//for\
+				
+			System.out.println("Enter the array elemnt for index:"+i);
+
+		a[i]=sc.nextInt();
+		}//for
+
+	//System.out.println("finally array is =>>"+Arrays.toString(a));
+		return a;
+	}
+
+
+	public static void insertionSort(int[] a) 
+		{//insertionSort
+
+	
+     for(int i=1;i<a.length;i++){
+		int currentindex=i,prev_index=i-1;
+		int current_ele=a[i];
+	
+
+	
+
+		while(prev_index >= 0 && a[prev_index]> current_ele){
+			System.out.println("Iteration"+i +"===>"+prev_index +" "+currentindex);
+			a[prev_index+1]=a[prev_index];
+				prev_index--;
+		}	
+		a[prev_index+1]=current_ele;
+     System.out.println("Iteration"+i +"" +"array  a =>>"+Arrays.toString(a));
+     }
+
+
+
+	 return ;
+
+	  }//insertionSort
+}

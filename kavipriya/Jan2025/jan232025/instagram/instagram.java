@@ -1,0 +1,55 @@
+class instagram 
+{
+/**
+	 public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	} 
+	**/
+
+
+	public String u_name;
+	private String u_email;
+	private String u_password;
+	private String u_Contact;
+
+instagram(String u_name,String u_email,String u_password,String u_Contact){
+
+	this.u_name=u_name;
+	this.u_email=u_email;
+	this.u_password=u_password;
+	this.u_Contact=u_Contact;
+
+	
+}
+//Getter
+public String getEmail(){
+	return u_email;
+}
+
+public String getpassword(){
+	return u_password;
+}
+
+public String getContact(){
+	return u_Contact;
+}
+//setter
+public void setEmail(String a){
+	this.u_email= u_email;
+}
+
+public void setpassword(String a){
+	this.u_password=u_password;
+}
+
+public void setContact(String a){
+	this.u_Contact=u_Contact;
+}
+
+
+
+
+
+
+}

@@ -1,0 +1,31 @@
+import java.util.*;
+class stringPalindrome
+{
+	  static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+
+			System.out.println("Enter your String");
+					String s1=sc.nextLine();
+					
+
+					String rev="";
+
+					for(int i=s1.length()-1;i>=0;i--){
+						
+						rev=rev+s1.charAt(i);
+					}
+			System.out.println("your reverse output "+ rev);
+
+			if(rev.equalIgnoreCase(s1)){
+				System.out.println("ITS A PALINDROME ");
+			}
+			else {
+				System.out.println("ITS A not PALINDROME ");
+			}
+
+	}
+
+
+	
+}

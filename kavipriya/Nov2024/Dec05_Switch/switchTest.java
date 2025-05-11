@@ -1,0 +1,105 @@
+import java.util.*;
+class switchTest 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("\t\t\tSelect the movie:\n 1.PUSHPA \n2.VIKRAM \n3.LEO");
+		int movienumber=sc.nextInt();
+
+//switch(movie block)
+
+switch(movienumber){ //movie switch block start
+	
+	        System.out.println("\t\tuser selected Movie +"movienumber);
+				case 1:{
+							
+							System.out.println("select the Actors \n a.ALLU ARJUN \n b.RASHIMA");
+					
+								char actorOption=sc.next().charAt(0);
+											switch(actorOption)
+												{
+															case 'a':{
+															System.out.println("\n\t\tALLU ARJUN age is 35 and phonenum is 336 ");
+															break;
+															}
+															case 'b':{
+															System.out.println("\n\t\tRASHIMA age is 35 and phonenum is 336 ");
+															break;
+															}
+															default:
+															{
+															System.out.println("Invalid actor option selected");
+															break;
+															}
+
+													}
+								break;
+													
+							}//case 1
+
+
+				case 2:{
+											System.out.println("\t\tuser selected: VIKRAM");
+											System.out.println("select the Actors \n a.KAMAL HASSAN \n b.VJS");
+											char actorOption=sc.next().charAt(0);
+											switch(actorOption){
+															case 'a':{
+															System.out.println("\n\t\tKAMAL HASSAN age is 35 and phonenum is 336");
+													
+															break;
+															}
+															case 'b':{
+															System.out.println("\n\t\tVJS age is 35 and VJS phonenum is 234");
+												
+															break;
+															}
+															default:
+															{
+															System.out.println("Invalid actor option selected");
+															break;
+															}
+
+														}
+									break;
+
+								}//case 2
+
+
+				case 3:{
+														System.out.println("\t\tuser selected: LEO");
+														System.out.println("select the Actors \n a.VIJAY \n b.TRISHA");
+														char actorOption=sc.next().charAt(0);
+														switch(actorOption){
+																		case 'a':{
+																		System.out.println("\n\t\tVIJAY age is 35 and phonenum is 336 ");
+																		break;
+																		}
+																		case 'b':{
+																		System.out.println("\n\t\tTRISHA age is 35 and phonenum is 336 ");
+																	
+																		break;
+																		}
+																		default:
+																		{
+																		System.out.println("Invalid actor option selected");
+																		break;
+																		}
+
+																	}
+												break;
+
+											}//case 3
+
+		
+		default:{
+						
+					System.out.println("**INVALID Movie Number is selected**");
+					break;
+					}
+
+
+}//movie switch block end
+
+	}
+}

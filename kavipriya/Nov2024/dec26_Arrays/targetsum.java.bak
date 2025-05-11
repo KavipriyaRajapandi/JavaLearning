@@ -1,0 +1,100 @@
+import java.util.*;
+class targetsum 
+{
+	public static void main(String[] args) 
+	{
+
+		int a[]={1,8,0,1,7,2,0,7,4,6,2};
+	int target=14;
+	findTwoPairs(a,target);
+    findThreePairs(a,target);
+	findFourPairs(a,target);
+
+	}
+
+///main concept >>  why i < a.length- 1>> bse  two pairs require two elemnt to add if go till end last elemnt we cannot add 
+
+	public static void findTwoPairs(int[] a, int targetSum) {
+        // Sort the array to handle duplicates
+        Arrays.sort(a);
+
+        // Iterate through the array with the first index i
+        for (int i = 0; i < a.length - 1; i++) {
+            // Skip duplicates for the first element
+            if (i > 0 && a[i] == a[i - 1]) continue;
+
+            // Iterate through the array with the second index j
+            for (int j = i + 1; j < a.length; j++) {
+                // Skip duplicates for the second element
+                if (j > i + 1 && a[j] == a[j - 1]) continue;
+
+                if (a[i] + a[j] == targetSum) {
+                    System.out.println("Combination pairs are => " + a[i] + " " + a[j]);
+                }
+            }
+        }
+    }
+
+
+
+
+public static void findThreePairs(int[] a, int targetSum)
+	{ 
+	// Sort the array to handle duplicates 
+	Arrays.sort(a); 
+	
+	// Iterate through the array with the first index i 
+	//We need three elements to form a triplet. If i is at the second-to-last position (a.length - 2), there won't be enough elements left to form a triplet.
+	//By stopping at a.length - 2, we ensure there are at least two more elements after i to form a valid triplet.
+	
+		for (int i = 0; i < a.length - 2; i++) { 
+			
+			// Skip duplicates for the first element 
+			if (i > 0 && a[i] == a[i - 1]) continue; 
+
+			// Iterate through the array with the second index j 
+			for (int j = i + 1; j < a.length - 1; j++) { 
+				// Skip duplicates for the second element 
+				if (j > i + 1 && a[j] == a[j - 1]) continue; 
+				// Iterate through the array with the third index k 
+				for (int k = j + 1; k < a.length; k++) { 
+					// Skip duplicates for the third element 
+					if (k > j + 1 && a[k] == a[k - 1]) continue;
+					if (a[i] + a[j] + a[k] == targetSum) { 
+						System.out.println("Combination pairs are => " + a[i] + " " + a[j] + " " + a[k]);
+						}
+						}
+						}
+						}
+						}
+
+
+
+
+	public static void findFourPairs(int[] a, int targetSum) 
+		{
+		// Sort the array to handle duplicates
+		Arrays.sort(a);
+		// Iterate through the array with the first index i
+		for (int i = 0; i < a.length - 3; i++) { 
+			// Skip duplicates for the first element
+			if (i > 0 && a[i] == a[i - 1]) continue;
+			// Iterate through the array with the second index j 
+			for (int j = i + 1; j < a.length - 2; j++) { 
+				// Skip duplicates for the second element 
+				if (j > i + 1 && a[j] == a[j - 1]) continue; 
+				// Iterate through the array with the third index k
+				for (int k = j + 1; k < a.length - 1; k++) { 
+					// Skip duplicates for the third element 
+					if (k > j + 1 && a[k] == a[k - 1]) continue; 
+					// Iterate through the array with the fourth index l
+					for (int l = k + 1; l < a.length; l++) { 
+						// Skip duplicates for the fourth element
+						if (l > k + 1 && a[l] == a[l - 1]) continue; 
+						if (a[i] + a[j] + a[k] + a[l] == targetSum) {
+							System.out.println("Combination pairs are => " + a[i] + " " + a[j] + " " + a[k] + " " + a[l]);
+							} } } }
+
+		}}
+
+}

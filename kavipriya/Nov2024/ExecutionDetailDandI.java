@@ -1,0 +1,23 @@
+class  ExecutionDetailDandI
+{
+	public static void main(String[] args) 
+	{
+
+		int a;
+		//System.out.println("a value :"+a);///will get error variable a might not have been initialized
+		String skill="JAVA";
+		System.out.println(skill);
+		skill="update345";
+		skill="xxxx";
+
+		boolean c,d=true,e=false;
+		e=d;
+		d=e;
+		System.out.println("d value :"+d);
+		System.out.println("e value :"+e);
+
+			System.out.println("skill value:"+skill);
+
+
+	}
+}

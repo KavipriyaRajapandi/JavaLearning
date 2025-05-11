@@ -1,0 +1,71 @@
+import java.util.*;
+class guesstheNumber 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+
+		  boolean flag = true;
+		System.out.println("welc to guess num game");
+
+		int attempts=0;
+int sys_num=(int)(Math.random()*100);
+	System.out.println("system generated num"+sys_num);
+
+		do{
+			attempts++;
+		System.out.println("Enter your number between 1-100");
+			int user_num=sc.nextInt();	
+
+ 
+     if(attempts<=4){
+	System.out.println("Attempt"+attempts);
+				 if(sys_num==user_num){//congrats
+					System.out.println("\t\t\tcongrats .......:::)))))) ");
+
+
+                             System.out.println("DO u want to continue \n1.yes\n2.No");
+
+							 int ch=sc.nextInt();
+							 switch(ch){
+								
+								case 1:{
+									attempts=0;
+                                    System.out.println("");
+									sys_num=(int)(Math.random()*100);
+	                                  System.out.println("system generated num"+sys_num);
+
+
+									break;
+								}
+								case 2:{
+									flag=false;
+									break;
+								}
+							 }
+
+
+
+						}
+
+						else if(sys_num>user_num){
+							
+							System.out.println("low");
+						}
+
+				else if(sys_num<user_num){
+							
+							System.out.println("High");
+						}
+
+}
+
+else{
+	flag=false;
+	 System.out.println("only 4 attempt allowed ..so attempts exhausted");
+}
+
+		}while(flag);
+		  System.out.println("exit THE PRPGRAM");
+	}
+}

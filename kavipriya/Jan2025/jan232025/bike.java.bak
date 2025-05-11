@@ -1,0 +1,12 @@
+class bike 
+{
+
+	String bike_name;
+	String b_colour;
+	double b_price;
+	String b_ownerName;
+	public void ride() 
+	{
+		System.out.println("Hello ride!");
+	}
+}

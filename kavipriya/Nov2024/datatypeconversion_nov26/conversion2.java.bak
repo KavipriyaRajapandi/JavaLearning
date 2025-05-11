@@ -1,0 +1,17 @@
+class  conversion2
+{
+	public static void main(String[] args) 
+	{
+		double a=123.999999999;
+
+		float res1=(float)a;
+
+		System.out.println("float res1"+res1);
+
+
+
+		long longvar=(long)res1;
+		System.out.println("long res1"+longvar);
+
+	}
+}

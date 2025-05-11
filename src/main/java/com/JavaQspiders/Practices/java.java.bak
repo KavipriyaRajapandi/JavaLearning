@@ -1,0 +1,8 @@
+class java 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("\"Ja\"va\"");
+		System.out.println("\"S\"QL\"");
+	}
+}

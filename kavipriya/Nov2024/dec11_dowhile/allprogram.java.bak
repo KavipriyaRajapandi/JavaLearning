@@ -1,0 +1,63 @@
+import java.util.*;
+
+class allprogram 
+{
+
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+
+		  
+
+		System.out.println("Welcome to progtam world!");
+boolean Flag = true;
+
+		do{
+
+			System.out.println("Select the program");
+            System.out.println("1. Print A-Z\n2.Print z-a\n3. EXIT");
+
+			int switchch=sc.nextInt();
+			switch(switchch){
+				case 1:{
+					System.out.println("Enter the start charcter");
+					char inputchar=sc.next().charAt(0);
+					
+
+
+
+					while(inputchar<='Z'){
+
+						
+						System.out.println("inputchar"+inputchar);
+						inputchar++;
+					}
+					break;
+
+				}
+
+case 2:{
+	System.out.println("Enter the End charcter");
+			char inputchar=sc.next().charAt(0);
+					while(inputchar>='A'){
+						
+						System.out.println("inputchar"+inputchar);
+						inputchar--;
+					}
+		break;
+
+				}
+				case 3:{
+					 Flag = false;
+                    System.out.println("======>>>>Exit the program");
+                    break;
+				}
+
+			}
+
+
+			
+
+		}while(Flag);
+	}
+}
